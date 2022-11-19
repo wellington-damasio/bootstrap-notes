@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reboot | Bootstrap</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body 
+    style="--bs-body-bg: #090530; 
+    --bs-body-font-family: monospace; 
+    --bs-body-color: #f2f9ff;
+    --bs-code-color: #f04b67;
+    --bs-body-font-size: 1.05rem;"
+>
+    <h1 class="container">Reboot</h1>
+
+    <div class="container">
+        <h2>Page defaults </h2>
+        <hr>
+        The <html> andelements are updated to provide better page-wide defaults. More specifically:</p>
+        
+        <ul>
+            <li>
+                The box-sizing is globally set on every element—including *::before 
+                and *::after, to border-box. This ensures that the declared width of 
+                element is never exceeded due to padding or border.
+            </li>
+            <ul>
+                <li>
+                    No base font-size is declared on the <code>&lt;html&gt;</code>, 
+                    but 16px is assumed (the browser default). font-size: 1rem is 
+                    applied on the <code>&lt;body&gt;</code> for easy responsive 
+                    type-scaling via media queries while respecting user preferences
+                    and ensuring a more accessible approach. This browser default can
+                    be overridden by modifying the $font-size-root variable.
+                </li>
+            </ul>
+            <li>
+                The <code>&lt;body&gt;</code> also sets a global font-family, 
+                font-weight, line-height, and color. This is inherited later by some 
+                form elements to prevent font inconsistencies.
+            </li>
+            <li>
+                For safety, the <code>&lt;body&gt;</code> has a declared 
+                background-color, defaulting to #fff.
+            </li>
+        </ul>
+
+        <h2>Headings & Paragraphs</h2>
+        <hr>
+
+        <h1>This is a &lt;h1&gt;</h1>
+        <h2>This is a &lt;h2&gt;</h2>
+        <h3>This is a &lt;h3&gt;</h3>
+        <h4>This is a &lt;h4&gt;</h4>
+        <h5>This is a &lt;h5&gt;</h5>
+        <h6>This is a &lt;h6&gt;</h6>
+
+        <h2>Horizontal Rules</h2>
+        <hr> 
+
+        <div class="text-primary">
+            <h3>Horizontal Rules inherit color from the parent (3rd)</h3>
+            <hr class="border border-danger" />
+            <hr class="border border-success" />
+            <hr />
+
+            <h3>Differnt border and border colors for &lt;hr&gt;</h3>
+            <hr class="border border-3 border-warning">
+            <hr class="border border-1 border-warning">
+            <hr class="border border-5 border-primary">
+            <hr class="border-info">
+            <hr class="border border-1 border-dark opacity-100">
+            <hr class="border border-2 border-info">
+            <hr class="border border-3 border-info">
+            <hr class="border border-2 border-success">
+            <hr class="border border-2 border-danger">
+
+            <h3>Changing the opacity</h3>
+            <hr class="border border-4 border-danger opacity-25">
+            <hr class="border border-4 border-danger opacity-50">
+            <hr class="border border-4 border-danger opacity-75">
+            <hr class="border border-4 border-danger opacity-100">
+            <hr class="border border-4 border-success opacity-25">
+            <hr class="border border-4 border-success opacity-50">
+            <hr class="border border-4 border-success opacity-75">
+            <hr class="border border-4 border-success opacity-100">
+            <hr class="border border-4 border-primary opacity-25">
+            <hr class="border border-4 border-primary opacity-50">
+            <hr class="border border-4 border-primary opacity-75">
+            <hr class="border border-4 border-primary opacity-100">
+
+        </div>
+
+        <h2>Lists</h2>
+        <hr>
+
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+
+            <ol>
+                <li>Do this</li>
+                <li>Do that</li>
+                <li>Do what?</li>
+                <li>Do when?</li>
+            </ol>
+        </ul>
+
+        <dl class="p-3 border border-warning bg-dark">
+            <dt>Description Term</dt>
+            <dd>Defining the term</dd>
+
+            <dt>Description Lists...</dt>
+            <dd>A description list is perfect for defining items</dd>
+        </dl>
+
+        <h2>Inline Code</h2>
+        <hr>
+
+        <p>This is an example of inline code: <code>&lt;section&gt;&lt;/section&gt;</code></p>
+
+        <h2>User Input</h2>
+        <hr>
+
+        <p>
+            To switch directories, type <kbd class="bg-dark text-bg-dark">cd</kbd> 
+            followed by the directory name
+        </p>
+        <p>
+            To edit settings, press <kbd class="bg-dark text-bg-dark">ctrl + ,</kbd> 
+            or <kbd>shift + x</kbd>
+        </p>
+
+        <h2>Sample Output</h2>
+        <hr>
+
+        <samp class="border d-block rounded-3 py-2 px-3 bg-dark text-bg-dark">
+            This text is meant to be trated as a sample from a computer program
+        </samp>
+
+        <h2>Tables</h2>
+        <hr>
+
+        <table>
+            <caption class="text-center">
+                This is the example of a table. Was writing above, but is read below.
+            </caption>
+            <thead>
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                </tr>
+                <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                </tr>
+                <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Forms</h2>
+        <hr>
+
+        <fieldset>
+            <legend>Form Legend</legend>
+            <form>
+                <label>Example Input</label>
+                <input type="text">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Email</label>
+                <input type="email" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Number</label>
+                <input type="number" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Telephone</label>
+                <input type="tel" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example URL</label>
+                <input type="url" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Search</label>
+                <input type="search" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Range</label>
+                <input type="range" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example File</label>
+                <input type="file" name="" id="">
+
+                <div class="w-100 mb-2"></div>
+
+                <label>Example Select</label>
+                <select>
+                    <option value="">Choose a value</option>
+                    <option value="1">Wellington</option>
+                    <option value="2">Aline</option>
+                    <option value="3">Lorraine</option>
+                </select>
+
+                <div class="w-100 d-block"></div>
+
+                <label>
+                    <input type="checkbox" name="" id=""> 
+                    Check this box
+                </label>
+
+                <div class="w-100 d-block"></div>
+
+                <label>
+                    <input type="radio" name="" id=""> Option 1
+                </label>
+                <label>
+                    <input type="radio" name="" id=""> Option 2
+                </label>
+                <label>
+                    <input type="radio" name="" id=""> Option 3
+                </label>
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Textarea</label>
+                <textarea></textarea>
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Date</label>
+                <input type="date" name="" id="">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Time</label>
+                <input type="time" name="" id="">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Password</label>
+                <input type="password" name="" id="">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Datetime-local</label>
+                <input type="datetime-local" name="" id="">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Week</label>
+                <input type="week">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Month</label>
+                <input type="month" name="" id="">
+
+                <div class="w-100 d-block"></div>
+
+                <label>Example Color</label>
+                <input type="color">
+
+                <div class="w-100 d-block"></div>
+
+                <button type="submit">Submit</button>
+                <input type="submit" value="Submit">
+                <button disabled="disabled">Submit</button>
+                <button type="reset">Submit</button>
+            </form>
+        </fieldset>
+
+        <h2>Address</h2>
+        <hr>
+
+        <address>
+            <span class="fw-semibold">Twitter, Inc.</span> <br>
+            1355 Market St, Suite 900 <br>
+            (123) 564-9087
+        </address>
+
+        <h2>Blockquote</h2>
+        <hr>
+
+        <blockquote class="border rounded-3 p-3">
+            <h3>This is a cool blockquote</h3>
+            <p>I would like to put something beautiful here...</p>
+        </blockquote>
+
+        <h2>Summary</h2>
+        <hr>
+
+        <details>
+            <summary>Some details</summary>
+            <p>More info about the details</p>
+        </details>
+
+        <details>
+            <summary>This is a cool accordion...</summary>
+            <p>If I know what an accordion is...</p>
+        </details>
+    </div>
+
+    <div class="container mb-3 d-flex justify-content-end">
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+</body>
+</html>

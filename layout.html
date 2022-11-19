@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Layout</h1>
+
+        <h2>Forms</h2>
+        <hr>
+
+        <p>
+            Since Bootstrap applies <code>display: block</code> and 
+            <code>width: 100%</code> to almost all our form controls, forms will by 
+            default stack vertically. Additional classes can be used to vary this 
+            layout on a per-form basis.
+        </p>
+
+        <h2>Utilities</h2>
+        <hr>
+
+        <p>
+            <mark>Margin</mark> utilities are the easiest way to add some structure to 
+            forms.
+        </p>
+
+        <p>
+            We recommend sticking to <code>margin-bottom</code> utilities, and using a 
+            single direction throughout the form for consistency.
+        </p>
+
+        <div class="border rounded p-3">
+            <h3>Using <code>mb-3</code></h3>
+            <form>
+                <div class="mb-3">
+                    <label for="marginExample1" class="form-label">Example</label>
+                    <input type="text" class="form-control" id="marginExample1">
+                </div>
+
+                <div class="mb-3">
+                    <label for="marginExample2" class="form-label">Example</label>
+                    <input type="password" class="form-control" id="marginExample2">
+                </div>
+            </form>
+        </div>
+
+        <h2>Form Grid</h2>
+        <hr>
+
+        <div class="border rounded p-3">
+            <form>
+                <div class="row g-2">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="userInput"
+                            placeholder="First Name">
+                            <label for="userInput">First Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="userEmailInput"
+                            placeholder="Email Address">
+                            <label for="userEmailInput">Email Address</label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label for="someInput" class="form-label">Type here</label>
+                        <input type="text" id="someInput" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <h2>Complex Layouts</h2>
+        <hr>
+
+        <form class="border rounded p-3 row g-3 mt-2">
+            <!-- Email Input -->
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" id="emailComplex" class="form-control"
+                        placeholder="Enter your email">
+                    <label for="emailComplex">Email</label>
+                </div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="password" id="passwordComplex" class="form-control"
+                        placeholder="Enter your password">
+                    <label for="passwordComplex">Passsword</label>
+                </div>
+            </div>
+
+            <!-- Address (Text Input) -->
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" id="addressComplex" class="form-control"
+                    placeholder="Enter your address">
+                    <label for="addressComplex">Address</label>
+                </div>
+            </div>
+
+            <!-- Address 2 (Text Input) -->
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" id="addressComplex2" class="form-control"
+                    placeholder="Enter your address">
+                    <label for="addressComplex2">Address 2</label>
+                </div>
+            </div>
+
+            <!-- City Input -->
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="cityInput"
+                        placeholder="Enter your city's name">
+                    <label for="cityInput">City</label>
+                </div>
+            </div>
+
+            <!-- State Input -->
+            <div class="col-7 col-md-4">
+                <div class="form-floating">
+                    <select id="stateInput" class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">MG</option>
+                        <option value="2">SP</option>
+                        <option value="3">RO</option>
+                        <option value="5">MT</option>
+                        <option value="6">SC</option>
+                    </select>
+                    <label for="stateInput"></label>
+                </div>
+            </div>
+
+            <!-- Zip Input -->
+            <div class="col-5 col-md-2">
+                <div class="form-floating">
+                    <input type="number" id="zipInput" class="form-control"
+                        placeholder="Your ZIP code here...">
+                    <label for="zipInput">Zip</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" id="checkMe" class="form-check-input">
+                    <label for="checkMe" class="form-check-label">Check me out</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+
+        <h2>Horizontal Form</h2>
+        <hr>
+
+        <p>
+            Create horizontal forms with the grid by adding the <code>.row</code> 
+            class to form groups and using the <code>.col-*-*</code> classes to 
+            specify the width of your labels and controls.
+        </p>
+
+        <p>
+            Be sure to add <code>.col-form-label</code> to your 
+            <code>&lt;label&gt;</code>s as well so they're vertically centered with 
+            their associated form controls.
+        </p>
+
+        <p>
+            At times, you maybe need to use <code>margin</code> or 
+            <code>padding</code> utilities to create that perfect alignment you need.
+        </p>
+
+        <form class="border rounded p-3">
+            <div class="row mb-3">
+                <label for="email2" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" id="email2" class="form-control">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="password2" class="form-col-label col-sm-2">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" id="password2" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input type="radio" id="gridRadios1" 
+                            class="form-check-input">
+                        <label for="gridRadios1" class="form-check-label">Radio 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="gridRadios2" class="form-check-input">
+                        <label for="gridRadios2" class="form-check-label">Radio 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="gridRadios3" class="form-check-input" 
+                            disabled>
+                        <label for="gridRadios3" class="form-check-label">Radio 3</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                        <input type="checkbox" id="gridCheckbox" 
+                            class="form-check-input">
+                        <label for="gridCheckbox" class="form-check-label">
+                            Check me
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
+        <h2>Horizontal form label sizing</h2>
+        <hr>
+
+        <p>
+            Be sure to use <code>.col-form-label-sm</code> or 
+            <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or 
+            <code>&lt;legend&gt;</code>s to correctly follow the size of 
+            <code>.form-control-lg</code> and <code>.form-control-sm</code>.
+        </p>
+        
+        <div class="border rounded p-3">
+            <div class="row m-3">
+                <label for="emailInput3" 
+                    class="col-sm-2 col-form-label col-form-label-sm">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email" id="emailInput3" 
+                        class="form-control form-control-sm" placeholder=".col-form-label-sm">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <label for="emailInput4" 
+                    class="col-sm-2 col-form-label">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email" id="emailInput4" class="form-control"
+                        placeholder=".col-form-label">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <label for="emailInput5" 
+                    class="col-sm-2 col-form-label col-form-label-lg">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email" id="emailInput5" 
+                        class="form-control form-control-lg" placeholder=".col-form-lg">
+                </div>
+            </div>
+        </div>
+
+        <h2>Auto Sizing</h2>
+        <hr>
+
+        <div class=" border p-3 rounded">
+            <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-auto">
+                  <label class="visually-hidden" for="autoSizingInput">Name</label>
+                  <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                </div>
+                <div class="col-auto">
+                  <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                  <select class="form-select" id="autoSizingSelect">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>        
+        </div>
+
+        <h2>Inline Forms</h2>
+        <hr>
+
+        <form class="row row-cols-lg-auto g-3 align-items-center border rounded
+            p-3 mt-2 mb-5">
+            <div class="col-12">
+                <label for="inlineUsername" class="visually-hidden">Username</label>
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="inlineUsername"
+                        placeholder="Enter your username...">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="inlineSelect" class="visually-hidden">Preferences</label>
+                <select id="inlineSelect" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="1">😉</option>
+                    <option value="2">😋</option>
+                    <option value="3">😱</option>
+                    <option value="4">🤐</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <label class="form-check-label" for="inlineFormCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+        </form>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end">
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+</body>
+</html>

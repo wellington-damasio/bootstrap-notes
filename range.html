@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range | Bootstrap</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Range</h1>
+
+        <h2>Overview</h2>
+        <hr>
+
+        <div class="border rounded p-3">
+            <label for="form-range" class="form-label">Example Range</label>
+            <input type="range" id="form-range" class="form-range">
+        </div>
+
+        <h2>Disabled</h2>
+        <hr>
+
+        <div class="border rounded p-3">
+            <label for="form-range-disabled" class="form-label">
+                Example Range Disabled
+            </label>
+            <input type="range" id="form-range-disabled" class="form-range" disabled>
+        </div>
+
+        <h2>Min and max</h2>
+        <hr>
+
+        <p>
+            Range inputs have implicit values for <code>min</code> and 
+            <code>max—0</code> and <code>100</code>, respectively. You may specify new 
+            values for those using the <code>min</code> and <code>max</code> attributes.
+        </p>
+
+        <div class="rounded border p-3">
+            <label for="custom-range" class="form-label">0 - 12</label>
+            <input type="range" id="custom-range" class="form-range" min="0" max="12">
+            <p class="lead" id="range-value-container"></p>
+        </div>
+
+        <h2>Steps</h2>
+        <hr>
+
+        <p>
+            By default, range inputs “snap” to integer values. To change this, you can 
+            specify a step value. In the example below, we double the number of steps 
+            by using <code>step="0.5"</code>.
+        </p>
+
+        <div class="rounded border p-3 mb-5">
+            <label for="custom-range2" class="form-label">0 - 12 (step=0.5)</label>
+            <input type="range" id="custom-range2" class="form-range" min="0" 
+                max="12" step="0.5">
+            <p class="lead" id="range-value-container2"></p>
+        </div>
+    </div>
+    
+    <div class=" container mb-2 d-flex justify-content-end">
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+</body>
+</html>

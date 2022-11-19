@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables | Bootstrap</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tables</h1>
+
+        <h2>Overview</h2>
+        <hr>
+
+        <p>
+            Due to the widespread use of <code>&lt;table&gt;</code> elements across 
+            third-party widgets like calendars and date pickers, Bootstrap's tables 
+            are opt-in. Add the base class .table to any <code>&lt;table&gt;</code>, 
+            then extend with our optional modifier classes or custom styles. All table
+            styles are not inherited in Bootstrap, meaning any nested tables can be
+            styled independent from the parent.
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Variants</h2>
+        <hr>
+
+        <h3>Colors on Tables</h3>
+        <table class="table table-warning">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Colors on Rows</h3>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-light">
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Colors on Cells</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td class="table-primary">Mark</td>
+                    <td class="table-success">Otto</td>
+                    <td class="table-primary">@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="table-success">Wellington</td>
+                    <td class="table-primary">Damasio</td>
+                    <td class="table-success">@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td class="table-primary">Lorraine</td>
+                    <td class="table-success">Damasio</td>
+                    <td class="table-primary">@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td class="table-success">Andrew</td>
+                    <td class="table-primary">Damasio</td>
+                    <td class="table-success">@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Accented Tables</h2>
+        <hr>
+
+        <h3>Stiped Rows</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Striped Columns</h3>
+        <table class="table table-striped-columns">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Color Variants + Accented Tables</h2>
+        <hr>
+
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td class="table-light">Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td class="table-light">Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td class="table-light">Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Hovable Rows</h2>
+        <hr>
+
+        
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Wellington</td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Active Tables</h2>
+        <hr>
+
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="table-active">Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Table borders</h2>
+        <hr>
+
+        <table class="table table-bordered border-success">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="table-active">Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Tables Without Borders</h2>
+        <hr>
+
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>    
+        </table>
+
+        <h2>Small Tables</h2>
+        <hr>
+
+        <p>
+            Add <code>.table-sm</code> to make any .table more compact by cutting all
+            cell padding in half.
+        </p>
+
+        <table class="table table-borderless table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>    
+        </table>
+
+        <h2>Table Group Dividers</h2>
+        <hr>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>@wdm</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>@ldm</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>@adm</td>
+                </tr>
+            </tbody>    
+        </table>
+
+        <h2>Vertical Alignment</h2>
+        <hr>
+
+        <h3>Align Center</h3>
+        <table class="table table-bordered align-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>Wellington <small>(highlight)</small></td>
+                    <td>Damasio</td>
+                    <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lorraine</td>
+                    <td>Damasio</td>
+                    <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andrew</td>
+                    <td>Damasio</td>
+                    <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                </tr>
+            </tbody>   
+        </table>
+
+        <h3>Align Bottom</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered align-bottom">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                    <tr class="table-active">
+                        <th scope="row">2</th>
+                        <td>Wellington <small>(highlight)</small></td>
+                        <td>Damasio</td>
+                        <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Lorraine</td>
+                        <td>Damasio</td>
+                        <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Andrew</td>
+                        <td>Damasio</td>
+                        <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                </tbody>   
+            </table>
+        </div>
+
+        <h2>Responsive Tables</h2>
+        <hr>
+
+        <p>
+            Responsive tables allow tables to be scrolled horizontally with ease. 
+            Make any table responsive across all viewports by wrapping a 
+            <code>.table</code> with <code>.table-responsive.</code> Or, pick a 
+            maximum breakpoint with which to have a responsive table up to by using 
+            <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.
+        </p>
+
+        <div class="table-responsive-xl">
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                        <td>Heading</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container mb-3 d-flex justify-content-end">
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+</body>
+</html>
