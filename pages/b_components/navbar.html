@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top bg-dark">
+      <div class="container-fluid">
+        <a href="/index.html" class="navbar-brand fs-4 text-bg-dark">WD</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarFixed"
+        >
+          <span class="navbar-toggler-icon text-bg-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarFixed">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link text-bg-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/pages/b_forms/overview.html"
+                class="nav-link text-bg-dark"
+                >Forms</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/pages/b_components/accordion.html"
+                class="nav-link text-bg-dark"
+              >
+                Accordions
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="margin-top: 6rem">
+      <h1>Navbar</h1>
+      <hr />
+      <div class="border rounded p-3 mb-4">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">WD</a>
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Dropdown</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Action</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a href="#" class="dropdown-item">Something</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  type="text"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <h2>Offcanvas navbar</h2>
+      <div class="border rounded p-3">
+        <nav class="navbar bg-warning">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">Offcanvas navbar</a>
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end bg-dark"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarlabel">
+                  Offcanvas
+                </h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active text-bg-dark">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-bg-dark">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle text-bg-dark"
+                      data-bs-toggle="dropdown"
+                      >Other links</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Action</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Other action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a href="#" class="dropdown-item">Some action</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3">
+                  <input
+                    type="text"
+                    class="form-control me-2"
+                    placeholder="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

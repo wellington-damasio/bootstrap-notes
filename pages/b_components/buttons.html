@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buttons</h1>
+
+      <h2>Examples</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <button class="btn me-2 btn-primary">Primary</button>
+        <button class="btn me-2 btn-secondary">Secondary</button>
+        <button class="btn me-2 btn-success">Success</button>
+        <button class="btn me-2 btn-danger">Danger</button>
+        <button class="btn me-2 btn-warning">Warning</button>
+        <button class="btn me-2 btn-info">Info</button>
+        <button class="btn me-2 btn-light">Light</button>
+        <button class="btn me-2 btn-dark">Dark</button>
+        <button class="btn btn-link">Link</button>
+      </div>
+
+      <h2>Outline Buttons</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <button class="btn me-2 btn-outline-primary">Primary</button>
+        <button class="btn me-2 btn-outline-secondary">Secondary</button>
+        <button class="btn me-2 btn-outline-success">Success</button>
+        <button class="btn me-2 btn-outline-danger">Danger</button>
+        <button class="btn me-2 btn-outline-warning">Warning</button>
+        <button class="btn me-2 btn-outline-info">Info</button>
+        <div class="d-inline-block p-2 rounded bg-dark">
+          <button class="btn m-0 btn-outline-light">Light</button>
+        </div>
+        <button class="btn me-2 btn-outline-dark">Dark</button>
+      </div>
+
+      <h2>Sizes</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="row g-3">
+          <div
+            class="d-flex align-items-center justify-content-lg-center gap-2 col-12 col-lg-4"
+          >
+            <button class="btn btn-primary btn-lg">Large Button</button>
+            <button class="btn btn-secondary btn-lg">Large Button</button>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-lg-center gap-2 col-12 col-lg-4"
+          >
+            <button class="btn btn-primary">Button</button>
+            <button class="btn btn-secondary">Button</button>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-lg-center gap-2 col-12 col-lg-4"
+          >
+            <button class="btn btn-primary btn-sm">Small Button</button>
+            <button class="btn btn-secondary btn-sm">Small Button</button>
+          </div>
+
+          <div class="col-12">
+            <h4>Customizing Button Sizes</h4>
+            <button
+              class="btn btn-primary"
+              style="
+                --bs-btn-padding-y: 1.2rem;
+                --bs-btn-padding-x: 3rem;
+                --bs-btn-font-size: 1.5rem;
+              "
+            >
+              Customized Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Disabled State</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="row gap-2">
+          <div class="col-md d-flex justify-content-lg-center gap-2 p-2">
+            <button class="btn btn-primary text-nowrap" disabled>
+              Primary Button
+            </button>
+            <button class="btn btn-secondary text-nowrap" disabled>
+              Button
+            </button>
+            <button class="btn btn-success text-nowrap" disabled>
+              Buy Now!
+            </button>
+          </div>
+          <div class="col-md d-flex justify-content-lg-center gap-2 p-2">
+            <button class="btn btn-outline-danger text-nowrap" disabled>
+              Primary Button
+            </button>
+            <button class="btn btn-outline-warning text-nowrap" disabled>
+              Button
+            </button>
+            <button class="btn btn-outline-info text-nowrap" disabled>
+              Buy Now!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Link functionality caveat</h2>
+      <hr />
+
+      <p>
+        To cover cases where you have to keep the href attribute on a disabled
+        link, the <code>.disabled</code> class uses
+        <code>pointer-events: none</code> to try to disable the link
+        functionality of <code>&lt;a&gt;</code> s. Note that this CSS property
+        is not yet standardized for HTML, but all modern browsers support it. In
+        addition, even in browsers that do support
+        <code>pointer-events: none</code>, keyboard navigation remains
+        unaffected, meaning that sighted keyboard users and users of assistive
+        technologies will still be able to activate these links. So to be safe,
+        in addition to <code>aria-disabled="true"</code>, also include a
+        <code>tabindex="-1"</code> attribute on these links to prevent them from
+        receiving keyboard focus, and use custom JavaScript to disable their
+        functionality altogether.
+      </p>
+
+      <div class="border roudned p-3">
+        <a
+          href="#"
+          class="btn btn-primary disabled"
+          tabindex="-1"
+          role="button"
+          aria-disabled="true"
+        >
+          Primary link
+        </a>
+        <a
+          href="#"
+          class="btn btn-secondary disabled"
+          tabindex="-1"
+          role="button"
+          aria-disabled="true"
+        >
+          Link
+        </a>
+      </div>
+
+      <h2>Block Buttons</h2>
+      <hr />
+
+      <div class="border p-3 rounded d-grid gap-2">
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-primary">Button</button>
+      </div>
+
+      <div class="border p-3 rounded row gap-2">
+        <button class="btn btn-success">Button</button>
+        <button class="btn btn-success">Button</button>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto border rounded p-3">
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-primary">Button</button>
+      </div>
+
+      <h2>Responsive Buttons</h2>
+
+      <div class="d-grid gap-2 d-md-block border rounded p-3">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+
+      <h2>Toggle Button States</h2>
+      <hr />
+
+      <p>
+        Add <code>data-bs-toggle="button"</code> to toggle a button’s active
+        state. If you’re pre-toggling a button, you must manually add the
+        <code>.active</code> class and <code>aria-pressed="true"</code> to
+        ensure that it is conveyed appropriately to assistive technologies.
+      </p>
+
+      <div class="border rounded p-3">
+        <button class="btn btn-primary" data-bs-toggle="button">Toggle</button>
+        <button
+          class="btn btn-primary active"
+          data-bs-toggle="button"
+          aria-pressed="true"
+        >
+          Toggle
+        </button>
+        <button class="btn btn-primary" data-bs-toggle="button" disabled>
+          Toggle
+        </button>
+      </div>
+    </div>
+    <div class="container mb-2 mt-5 d-flex justify-content-end">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

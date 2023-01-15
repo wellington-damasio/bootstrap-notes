@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popovers | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="/js/popover.js"></script>
+
+    <style>
+      .custom-popover {
+        --bs-popover-max-width: 200px;
+        --bs-popover-border-color: #112;
+        --bs-popover-header-bg: #112;
+        --bs-popover-header-color: #f1f1f1;
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: 1rem;
+      }
+
+      .disabled-popover {
+        --bs-popover-max-width: 200px;
+        --bs-popover-body-color: #f1f1f1;
+        --bs-popover-bg: #dc3545;
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">Popovers</h1>
+    <hr />
+    <div class="container">
+      <h2>Overview</h2>
+      <div class="border rounded p-3 mb-4">
+        <button
+          class="btn btn-lg btn-danger"
+          data-bs-toggle="popover"
+          data-bs-title="Popover title"
+          data-bs-content="And here's some amazing content. It's very enganging..."
+        >
+          Click to toggle Popover
+        </button>
+      </div>
+
+      <h2>Four directions</h2>
+      <div class="border p-3 rounded mb-4">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-placement="top"
+          data-bs-content="Top popover"
+        >
+          Popover on top
+        </button>
+
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-placement="bottom"
+          data-bs-content="Bottom popover"
+        >
+          Popover on bottom
+        </button>
+
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-placement="left"
+          data-bs-content="Left popover"
+        >
+          Popover on left
+        </button>
+
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-placement="right"
+          data-bs-content="Right popover"
+        >
+          Popover on right
+        </button>
+      </div>
+
+      <h2>Custom popovers</h2>
+      <div class="border rounded p-3 mb-4">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-placement="right"
+          data-bs-title="Custom popover"
+          data-bs-content="This popover is themed via CSS variables"
+          data-bs-custom-class="custom-popover"
+        >
+          Custom popover
+        </button>
+      </div>
+
+      <h2>Dismiss on next click</h2>
+      <div class="border rounded p-3 mb-4">
+        <button
+          tabindex="0"
+          class="btn btn-lg btn-danger"
+          role="button"
+          data-bs-toggle="popover"
+          data-bs-trigger="focus"
+          data-bs-title="Dismissible popover"
+          data-bs-content="Some more amazing content here..."
+        >
+          Dismissible popover
+        </button>
+      </div>
+
+      <h2>Disabled element</h2>
+      <div class="border rounded p-3 mb-4">
+        <span
+          class="d-inline-block"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-trigger="hover focus"
+          data-bs-content="Disabled popover"
+          data-bs-custom-class="disabled-popover"
+        >
+          <button class="btn btn-primary" disabled>Disabled button</button>
+        </span>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

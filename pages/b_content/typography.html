@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography | Bootstrap</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Typography</h1>
+
+      <h2>Global Settings</h2>
+      <hr />
+
+      <ul>
+        <li>
+          For a more inclusive and accessible type scale, we use the browser's
+          default root font-size (typically 16px) so visitors can customize
+          their browser defaults as needed.
+        </li>
+        <li>
+          Use the <code>$font-family-base</code>, <code>$font-size-base</code>,
+          and <code>$line-height-base</code> attributes as our typographic base
+          applied to the <code>&lt;body&gt;</code>.
+        </li>
+        <li>Set the global link color via <code>$link-color</code>.</li>
+        <li>
+          Use <code>$body-bg</code> to set a background-color on the
+          <code>&lt;body&gt;</code> (#fff by default).
+        </li>
+      </ul>
+
+      <h2>Headings</h2>
+      <hr />
+
+      <h1>h1. Bootstrap heading</h1>
+      <h2>h2. Bootstrap heading</h2>
+      <h3>h3. Bootstrap heading</h3>
+      <h4>h4. Bootstrap heading</h4>
+      <h5>h5. Bootstrap heading</h5>
+      <h6>h6. Bootstrap heading</h6>
+
+      <h2>Customizing Headings (<code>.text-muted</code>)</h2>
+      <hr />
+
+      <h3>
+        This heading has a <span class="text-muted">faded secondary text</span>
+      </h3>
+
+      <h2>Displaying Headings (headings that stand out)</h2>
+      <hr />
+
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+      <h1 class="display-5">Display 5</h1>
+      <h1 class="display-6">Display 6</h1>
+
+      <small
+        >Display headings are customizable via two variables,
+        <code>$display-font-family</code> and <code>$display-font-style</code>.
+      </small>
+
+      <h2>Lead</h2>
+      <hr />
+
+      <p class="lead">
+        Make a paragraph stand out by adding .leaf to it`s classes
+      </p>
+      <p>Compare it with me, daddy...</p>
+
+      <h2>Inline Text Elements</h2>
+      <hr />
+
+      <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+      <p>
+        <del>This line of text is meant to be treated as deleted text.</del>
+      </p>
+      <p>
+        <s>This line of text is meant to be treated as no longer accurate.</s>
+      </p>
+      <p>
+        <ins
+          >This line of text is meant to be treated as an addition to the
+          document.</ins
+        >
+      </p>
+      <p><u>This line of text will render as underlined.</u></p>
+      <p>
+        <small>This line of text is meant to be treated as fine print.</small>
+      </p>
+      <p><strong>This line rendered as bold text.</strong></p>
+      <p><em>This line rendered as italicized text.</em></p>
+
+      <h3>Remember that tags should be used for semantic purposes</h3>
+      <ul>
+        <li>
+          <code>&lt;mark&gt;&lt;/mark&gt;</code> represents text which is marked
+          or highlighted for reference or notation purposes.
+        </li>
+        <li>
+          <code>&lt;small&gt;&lt;/mark&gt;</code> represents side-comments and
+          small print, like copyright and legal text.
+        </li>
+        <li>
+          <code>&lt;s /&gt;</code> represents element that are no longer
+          relevant or no longer accurate.
+        </li>
+        <li>
+          <code>&lt;u /&gt;</code> represents a span of inline text which should
+          be rendered in a way that indicates that it has a non-textual
+          annotation.
+        </li>
+      </ul>
+
+      <p>
+        If you want to style your text, you should use the following classes:
+      </p>
+      <ul>
+        <li>
+          <code>.mark</code> will apply the same styles as
+          <code>&lt;mark&gt;</code>
+        </li>
+        <li>
+          <code>.small</code> will apply the same styles as
+          <code>&lt;smal&gt;</code>
+        </li>
+        <li>
+          <code>.text-decoration-underline</code> will apply the same styles as
+          <code>&lt;u /&gt;</code>
+        </li>
+        <li>
+          <code>.text-decoration-line-through</code> will apply the same styles
+          as <code>&lt;s /&gt;</code>
+        </li>
+      </ul>
+
+      <h2>Abbreviations</h2>
+      <hr />
+
+      <p><abbr title="attribute">attr</abbr></p>
+      <p>
+        <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+      </p>
+
+      <h2>Blockquotes</h2>
+      <hr />
+
+      <blockquote class="blockquote">
+        <p>A well-known quote... Comer biscoito!</p>
+      </blockquote>
+
+      <h2>Naming a source <code>&lt;figcaption&gt;</code></h2>
+      <hr />
+
+      <figure>
+        <blockquote class="blockquote">
+          <p>A well-known quote... Comer arroz!</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous like... LaVey 😈
+        </figcaption>
+      </figure>
+
+      <h2>Alignment</h2>
+      <hr />
+
+      <h3><code>.text-center</code></h3>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>A well-known quote... Tomar sorvete!</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+
+      <h3><code>.text-end</code></h3>
+      <figure class="text-end">
+        <blockquote class="blockquote">
+          <p>A well-known quote... Tomar sorvete!</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+
+      <h2>Lists</h2>
+      <hr />
+
+      <h3>Unstyled</h3>
+      <ul class="list-unstyled">
+        <li>This is a list</li>
+        <li>A list that I like</li>
+        <li>May be a list about <em>biscoito</em></li>
+
+        <ul>
+          <li>Thi is not unstyled</li>
+          <li>Have to add the class to become so</li>
+          <li><code>.list-unstyled</code></li>
+        </ul>
+      </ul>
+
+      <h3>Inline</h3>
+      <ul class="list-inline">
+        <li class="list-inline-item">This is a list item</li>
+        <li class="list-inline-item">Yep, we're in line...</li>
+        <li class="list-inline-item">Got it? inline...</li>
+        <li class="list-inline-item">In line...</li>
+      </ul>
+
+      <ul class="list-inline p-3 border bg-dark">
+        <li class="list-inline-item">
+          <a href="#" class="text-bg-dark">Home</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-bg-dark">Finances</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-bg-dark">Inventory</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-bg-dark">Human Resources</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-bg-dark">Contacts</a>
+        </li>
+      </ul>
+
+      <h2>Description List Alignment</h2>
+      <hr />
+
+      <dl class="row">
+        <dt class="col-sm-3">Description List</dt>
+        <dd class="col-sm-9">
+          A description list is perfect for describing things...
+        </dd>
+
+        <dt class="col-sm-3">Idiot</dt>
+        <dd class="col-sm-9">
+          Someone who can't stop thinking about <em>biscoito</em>
+        </dd>
+
+        <dt class="col-sm-3">Biscoito</dt>
+        <dd class="col-sm-9">Delicious food....</dd>
+
+        <dt class="col-sm-3 text-truncate">
+          Truncate the text if it gets too big and boring and... You know anyone
+          likes big texts, they are pretty hard to read anyway
+        </dt>
+        <dd class="col-sm-9">
+          Yep, you're seing what is a text truncation right now!
+        </dd>
+      </dl>
+    </div>
+
+    <div class="container mb-3 d-flex justify-content-end">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

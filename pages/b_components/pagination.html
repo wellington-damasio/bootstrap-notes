@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-center">Pagination</h1>
+    <hr />
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a
+        navigation section to screen readers and other assistive technologies.
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link active">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Working with icons</h2>
+      <div class="border rounded p-3 mb-4">
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link active">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link disabled">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Sizing</h2>
+      <div class="border rounded p-3 row">
+        <div class="col d-flex justify-content-center">
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="page-item active">
+                <a class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">3</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <nav>
+            <ul class="pagination pagination">
+              <li class="page-item active">
+                <a class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">3</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <nav>
+            <ul class="pagination pagination-sm">
+              <li class="page-item active">
+                <a class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link">3</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Group</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Input Group</h1>
+
+      <h2>Basic Example</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group m-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="input-group m-3">
+          <span class="input-group-text" id="basic-addon2">$</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Put your money here 😈"
+            aria-label="Username"
+            aria-describedby="basic-addon2"
+          />
+        </div>
+
+        <label for="basic-url" class="from-label ms-3">Your vanity URL</label>
+        <div class="input-group m-3">
+          <span class="input-group-text" id="basic-addon3"
+            >https://example.com/users/</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+          />
+        </div>
+      </div>
+
+      <h2>Sizing</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group input-group-sm m-3">
+          <span class="input-group-text">Small</span>
+          <input type="text" class="form-control" disabled />
+        </div>
+
+        <div class="input-group m-3">
+          <span class="input-group-text">Default</span>
+          <input type="text" class="form-control" value="Whatever" readonly />
+        </div>
+
+        <div class="input-group input-group-lg m-3">
+          <span class="input-group-text">Large</span>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+
+      <h2>Checkboxes & Radios</h2>
+      <hr />
+
+      <p>
+        Place any checkbox or radio option within an input group's addon instead
+        of text. We recommend adding <code>.mt-0</code> to the
+        <code>.form-check-input</code> when there's no visible text next to the
+        input.
+      </p>
+
+      <div class="border rounded p-3">
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input type="checkbox" class="form-check-input mt-0" />
+          </div>
+          <input type="text" class="form-control" placeholder="Checkbox" />
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input type="radio" class="form-check-input mt-0" />
+          </div>
+          <input type="text" class="form-control" placeholder="Radio" />
+        </div>
+      </div>
+
+      <h2>Multiple Inputs</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group">
+          <span class="input-group-text">First and last name</span>
+          <input type="text" class="form-control" />
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+
+      <h2>Multiple Addons</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group">
+          <span class="input-group-text">Your Profits: $</span>
+          <input type="text" class="form-control" />
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+
+      <h2>Button Addons</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group border-secondaryu mb-3">
+          <button class="btn btn-outline-secondary">Button</button>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary">Button</button>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient's username"
+            aria-label="Recipient's username with two button addons"
+          />
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+        </div>
+      </div>
+
+      <h2>Buttons with Dropdown</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group mb-3">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Action</a></li>
+            <li><a href="#" class="dropdown-item">Adventure</a></li>
+            <li><a href="#" class="dropdown-item">Cowboy</a></li>
+            <li><a href="#" class="dropdown-item">Medical</a></li>
+            <li><a href="#" class="dropdown-item">Space</a></li>
+            <li><a href="#" class="dropdown-item">War</a></li>
+          </ul>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Choose a film category"
+          />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Text input with 2 dropdown buttons"
+          />
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Segmented Buttons</h2>
+      <hr />
+
+      <div class="border rounded p-3">
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary">Action</button>
+          <button
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input
+            type="text"
+            class="form-control"
+            valuer="Nice try, man!"
+            readonly
+          />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with segmented dropdown button"
+        />
+        <button type="button" class="btn btn-outline-secondary">Action</button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <h2>Custom Forms</h2>
+      <hr />
+
+      <h3>Custom select</h3>
+      <div class="border rounded p-3">
+        <div class="input-group mb-3">
+          <label for="inputGroupSelect01" class="input-group-text">
+            Options
+          </label>
+          <select id="inputGroupSelect01" class="form-select">
+            <option selected>Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="animal-select" class="input-group-text">
+            Which animal do you like the most?
+          </label>
+          <select class="form-select" id="animal-select">
+            <option selected>Choose an animal</option>
+            <option value="cow">🐄</option>
+            <option value="rat">🐀</option>
+            <option value="dog">🐕</option>
+            <option value="whale">🐳</option>
+            <option value="turtle">🐢</option>
+          </select>
+          <button class="btn btn-outline-secondary">Choose!</button>
+        </div>
+      </div>
+
+      <h3>Custom File Input</h3>
+      <hr />
+
+      <div class="rounded border p-3 mb-5">
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupFile01">Upload</label>
+          <input type="file" class="form-control" id="inputGroupFile01" />
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="file" id="inputGroupFile02" class="form-control" />
+          <label for="inputGroupFile02" class="input-group-text">Upload</label>
+        </div>
+
+        <div class="input-group">
+          <input
+            type="file"
+            class="form-control"
+            id="inputGroupFile04"
+            aria-describedby="inputGroupFileAddon04"
+            aria-label="Upload"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="inputGroupFileAddon04"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-2 d-flex justify-content-end">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

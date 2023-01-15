@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navs & Tabs | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-center">Navs & Tabs</h1>
+    <hr />
+
+    <div class="container">
+      <h2>Base nav</h2>
+      <p>
+        The base <code>.nav</code> component is built with flexbox and provide a
+        strong foundation for building all types of navigation components.
+      </p>
+
+      <p class="bg-info bg-opacity-25 text-bg-info p-3">
+        The base <code>.nav</code> component does not include any
+        <code>.active</code> state. The following examples include the class,
+        mainly to demonstrate that this particular class does not trigger any
+        special styling.
+      </p>
+
+      <div class="border p-3 rounded mb-4">
+        <ul class="nav">
+          <li class="nav-item">
+            <!-- Active state doesn't work on .nav -->
+            <a href="" class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Vertical Alignment</h3>
+      <p>
+        <code>.nav</code> is made up using flexbox, which means you can align it
+        horizontally or vertically
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <!-- Active state doesn't work on .nav -->
+            <a href="" class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Tabs</h2>
+      <p>
+        Takes the basic nav from above and adds the <code>.nav-tabs</code> class
+        to generate a tabbed interface.
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <!-- Active state doesn't work on .nav -->
+            <a href="" class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Pills</h2>
+      <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+      <div class="border p-3 rounded mb-4">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <!-- Active state doesn't work on .nav -->
+            <a href="" class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Fill and Justify</h2>
+      <p>
+        Force your <code>.nav</code>'s contents to extend the full available
+        width one of two modifier classes.
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <!-- Active state doesn't work on .nav -->
+            <a href="" class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Much longer link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        For equal-width elements, use <code>.nav-justified</code>. All
+        horizontal space will be occupied by nav links, but unlike the
+        <code>.nav-fill</code> above, every nav item will be the same width.
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <h3>nav-justified</h3>
+        <ul
+          class="nav nav-pills nav-justified border border-2 border-primary rounded p-2"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Much longer nav link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Other gigantic link here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"
+              >This is one is disabled but also enourmours, my friend</a
+            >
+          </li>
+        </ul>
+
+        <h3>nav-fill</h3>
+        <ul
+          class="nav nav-pills nav-fill border border-2 border-primary rounded p-2"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Much longer nav link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Other gigantic link here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"
+              >This is one is disabled but also enourmours, my friend</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

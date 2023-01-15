@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offcanvas | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-center">Offcanvas</h1>
+    <hr />
+    <p class="container">
+      Offcanvas is a sidebar component that can be toggled via JavaScript to
+      appear from the left, right, top, or bottom edge of the viewport.
+    </p>
+    <div class="container">
+      <h2>Example</h2>
+      <div class="border rounded p-3 mb-4">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+        >
+          Toggle Offcanvas
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            Content for the offcanvas goes here. You can place just about any
+            Bootstrap component or custom elements here.
+          </div>
+        </div>
+      </div>
+
+      <h2>Placement</h2>
+      <div class="border p-3 rounded mb-4">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-top"
+        >
+          Offcanvas Top
+        </button>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas-top">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas top</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">This is an offcanvas top...</div>
+        </div>
+
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-bottom"
+        >
+          Offcanvas Bottom
+        </button>
+
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvas-bottom"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas Bottom</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">This is an offcanvas bottom...</div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

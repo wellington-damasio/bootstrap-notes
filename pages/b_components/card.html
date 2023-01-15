@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center">Card</h1>
+      <hr />
+      <h2>Example</h2>
+      <div class="border rounded p-3 mb-4">
+        <div class="card col-md-6 col-lg-3">
+          <img
+            src="https://github.com/wellington-damasio.png"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Wellington Damasio</h5>
+            <h6 class="card-subtitle text-muted mb-3">Frontend Engineer</h6>
+            <p class="card-text">
+              Some random text I'd like to put here my honored man.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="card-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>List Groups</h2>
+      <p>Create lists of content in a card with a flush list group.</p>
+      <div class="border rounded p-3">
+        <div class="row gap-3">
+          <div class="col-md">
+            <div class="card" style="max-width: 20rem; margin-inline: auto">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="max-width: 20rem; margin-inline: auto">
+              <div class="card-header">Featured</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Kitchen Sink</h2>
+      <div class="rounded border p-3">
+        <div class="card col col-md-6 col-lg-4">
+          <img src="https://github.com/diego.png" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text here...</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Somewhere</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>Header and Footer</h2>
+      <div class="rounded border p-3">
+        <div class="card">
+          <div class="card-header">Featured</div>
+          <div class="card-body">
+            <h5 class="card-title">Card special title</h5>
+            <p class="card-text">
+              Some random text I'm coming with from the top of my head
+            </p>
+            <a href="#" class="btn btn-primary">Button :)</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">Quote</div>
+          <div class="card-body">
+            <h5 class="card-title">Quote card title</h5>
+            <blockquote class="blockquote mb-0">
+              <p>A well-known quote, contained in q blockquote element.</p>
+              <footer class="blockquote-footer">
+                Someone famous (like Winston Churchill)
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card text-center">
+          <div class="card-header">Featured</div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as natural lead-in...
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer">2 days ago</div>
+        </div>
+      </div>
+
+      <h2>Navigation</h2>
+      <div class="border rounded p-3">
+        <h4><code>nav-tabs</code></h4>
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Active</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title</h5>
+            <p class="card-text">More text... It never ends my friend.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <h4><code>nav-pills</code></h4>
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Active</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title</h5>
+            <p class="card-text">More text... It never ends my friend.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>Image Overlays</h2>
+      <div class="border rounded p-3">
+        <div class="card text-bg-dark" style="max-width: 21rem">
+          <img src="https://github.com/anna.png" alt="" class="card-img" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card image with text inside it
+            </p>
+            <p class="card-text"><small>Last updated 3 minutes ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Horizontal</h2>
+      <p>
+        Using a combination of grid and utility classes, cards can be made
+        horizontal in a mobile-friendly and responsive way.
+      </p>
+      <div class="border rounded p-3">
+        <div class="card mb-3" style="max-width: 21rem">
+          <div class="row g-0">
+            <div
+              class="col-md-4 bg-dark rounded-start d-flex justify-content-center align-items-center"
+            >
+              <p class="text-bg-dark">Image here</p>
+              <!-- <img
+                src="https://github.com/anna.png"
+                alt=""
+                class="img-fluid rounded-start"
+              /> -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Anna Yapalenvko</h5>
+                <p class="card-text">This is a simple profile card.</p>
+                <p class="card-text">
+                  <small class="text-muted">Last update 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Background and color</h2>
+      <div class="border rounded p-3">
+        <div class="card text-bg-primary" style="max-width: 20rem">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example of card text...</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-text">Last updated 8 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Border</h2>
+      <div class="border rounded p-3">
+        <div class="card border-primary" style="max-width: 18rem">
+          <div class="card-header bg-primary text-bg-primary">Header</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">
+              Some random text... Man I'm tired of writing those texts...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

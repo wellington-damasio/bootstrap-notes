@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid | Bootstrap</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 class="container">Grid</h1>
+
+    <div class="container text-center mb-5">
+      <div class="row">
+        <div class="col col-lg-5 border border-2 border-danger p-2">
+          Column 1
+        </div>
+        <div class="col border border-2 border-danger p-2">Column 2</div>
+        <div class="col border border-2 border-danger p-2">Column 3</div>
+      </div>
+      <div class="row">
+        <div class="col border border-2 border-danger p-2">Column 1</div>
+        <div class="col-auto col-md-9 border border-2 border-danger p-2">
+          Variable width content
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border border-2 border-danger p-2">Column 1</div>
+        <div class="col border border-2 border-danger p-2">Column 2</div>
+        <div class="col border border-2 border-danger p-2">Column 3</div>
+        <div class="col border border-2 border-danger p-2">Column 4</div>
+      </div>
+      <div class="row">
+        <div class="col border border-2 border-danger p-2">Column 1</div>
+        <div class="col border border-2 border-danger p-2">Column 2</div>
+        <div class="col border border-2 border-danger p-2">Column 3</div>
+        <div class="col border border-2 border-danger p-2">Column 4</div>
+        <div class="col border border-2 border-danger p-2">Column 5</div>
+      </div>
+    </div>
+
+    <div class="container text-center mb-5">
+      <div class="row">
+        <div class="col-sm-8 border border-2 border-info p-2">col-sm-8</div>
+        <div class="col-sm-4 border border-2 border-info p-2">col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm border border-2 border-info p-2">col-sm</div>
+        <div class="col-sm border border-2 border-info p-2">col-sm</div>
+        <div class="col-sm border border-2 border-info p-2">col-sm</div>
+      </div>
+      <div class="row">
+        <div class="col-sm border border-2 border-info p-2">col-sm</div>
+        <div class="col-sm border border-2 border-info p-2">col-sm</div>
+      </div>
+    </div>
+
+    <h1 class="container text-center">
+      Stacking Columns According to Viewport
+    </h1>
+    <div class="container text-center mb-5">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8 border border-2 border-dark">.col-md-8</div>
+        <div class="col-6 col-md-4 border border-2 border-dark">
+          .col-6 .col-md-4
+        </div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4 border border-2 border-dark">
+          .col-6 .col-md-4
+        </div>
+        <div class="col-6 col-md-4 border border-2 border-dark">
+          .col-6 .col-md-4
+        </div>
+        <div class="col-6 col-md-4 border border-2 border-dark">
+          .col-6 .col-md-4
+        </div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6 border border-2 border-dark">.col-6</div>
+        <div class="col-6 border border-2 border-dark">.col-6</div>
+      </div>
+
+      <!-- Columns are 100% until medium viewport width -->
+      <div class="row">
+        <div class="col-12 col-md-6 border-2 border-dark border">
+          .col-12 .col-md-6
+        </div>
+        <div class="col-12 col-md-6 border-2 border-dark border">
+          .col-12 .col-md-6
+        </div>
+      </div>
+    </div>
+
+    <h1 class="container">Row Columns (row-cols-x)</h1>
+    <div class="container text-center mb-5">
+      <div class="row row-cols-3">
+        <div class="col border border-2 border-success p-2">Column 1</div>
+        <div class="col border border-2 border-success p-2">Column 2</div>
+        <div class="col border border-2 border-success p-2">Column 3</div>
+        <div class="col border border-2 border-success p-2">Column 4</div>
+        <div class="col border border-2 border-success p-2">Column 5</div>
+        <div class="col border border-2 border-success p-2">Column 6</div>
+        <div class="col border border-2 border-success p-2">Column 7</div>
+        <div class="col border border-2 border-success p-2">Column 8</div>
+      </div>
+    </div>
+
+    <h2 class="container">row-cols-auto</h2>
+    <div class="container text-center mb-5">
+      <div class="row row-cols-auto">
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+        <div class="col border border-2 border-primary p-2">Column</div>
+      </div>
+    </div>
+
+    <h2 class="container">row-cols-4 and col-6</h2>
+    <div class="container text-center mb-5">
+      <div class="row row-cols-4">
+        <div class="col border border-2 border-danger p-2">Column 1</div>
+        <div class="col border border-2 border-danger p-2">Column 2</div>
+        <div class="col border border-2 border-danger p-2">Column 3</div>
+        <div class="col border border-2 border-danger p-2">Column 4</div>
+        <div class="col border border-2 border-danger p-2">Column 5</div>
+        <div class="col border border-2 border-danger p-2">Column 6</div>
+        <div class="col border border-2 border-danger p-2">Column 7</div>
+        <div class="col border border-2 border-danger p-2">Column 8</div>
+        <div class="col-6 border border-2 border-danger p-2">Column 9</div>
+        <div class="col-6 border border-2 border-danger p-2">Column 10</div>
+      </div>
+    </div>
+
+    <h1 class="container">Nesting Grids</h1>
+
+    <div class="container text-center mb-5">
+      <div class="row">
+        <div class="col border border-2 border-success p-2">Column 1</div>
+        <div class="col border border-2 border-success p-2">Column 2</div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4 border border-2 border-primary p-2">Column 1</div>
+            <div class="col-4 border border-2 border-primary p-2">Column 2</div>
+            <div class="col-4 border border-2 border-primary p-2">Column 3</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 border border-2 border-primary p-2">
+              Column 1
+            </div>
+            <div class="col-sm-3 border border-2 border-primary p-2">
+              Column 2
+            </div>
+            <div class="col-sm-3 border border-2 border-primary p-2">
+              Column 3
+            </div>
+            <div class="col-sm-3 border border-2 border-primary p-2">
+              Column 4
+            </div>
+          </div>
+        </div>
+        <div class="col border border-2 border-success p-2">Column 1</div>
+        <div class="col border border-2 border-success p-2">Column 2</div>
+        <div class="col border border-2 border-success p-2">Column 3</div>
+      </div>
+    </div>
+
+    <div class="container mb-3 d-flex justify-content-end">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

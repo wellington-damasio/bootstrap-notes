@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollspy | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">Scrollspy</h1>
+    <hr />
+    <p class="container">
+      Scrollspy toggles the <code>.active</code> class on anchor
+      (<code>&lt;a&gt;</code>) elements when the element with the id referenced
+      by the anchor's href is scrolled into view. Scrollspy is best used in
+      conjunction with a Bootstrap <em>nav component</em> or
+      <em>list group</em>, but it will also work with any anchor elements in the
+      current page. Here's how it works.
+    </p>
+
+    <div class="container">
+      <div class="border rounded p-3 mb-4">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example2"
+          data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+          style="height: 300px; overflow-y: scroll"
+          tabindex="0"
+        >
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <h4 id="scrollspyHeading3">Third heading</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <h4 id="scrollspyHeading5">Fifth heading</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur praesentium rem quo unde maxime nemo soluta repudiandae,
+            voluptatibus ducimus, deleniti quas, suscipit ullam recusandae?
+            Fugit architecto ad quos quo sunt.
+          </p>
+        </div>
+      </div>
+
+      <h2>Nested nav</h2>
+      <p>
+        If a nested <code>.nav</code> is <code>.active</code>, its parents will
+        also be <code>.active</code>.
+      </p>
+      <div class="border rounded p-3 mb-4">
+        <div class="row">
+          <div class="col-4">
+            <nav
+              id="navbar-example3"
+              class="h-100 flex-column align-items-stretch pe-4 border-end"
+            >
+              <nav class="nav nav-pills flex-column">
+                <a href="#item-1" class="nav-link">Item 1</a>
+                <nav class="nav nav-pills flex-column">
+                  <a href="#item-1-1" class="nav-link ms-3 my-1">Item 1.1</a>
+                  <a href="#item-1-2" class="nav-link ms-3 my-1">Item 1.2</a>
+                </nav>
+                <a href="#item-2" class="nav-link">Item 2</a>
+                <a href="#item-3" class="nav-link">Item 3</a>
+                <nav class="nav nav-pills flex-column">
+                  <a href="#item-3-1" class="nav-link ms-3 my-1">Item 3.1</a>
+                  <a href="#item-3-2" class="nav-link ms-3 my-1">Item 3.2</a>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+          <div class="col-8">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#navbar-example3"
+              data-bs-smooth-scroll="true"
+              style="max-height: 400px; overflow-y: scroll"
+              tabindex="0"
+            >
+              <div id="item-1">
+                <h4>Item 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-1-1">
+                <h4>Item 1.1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-1-2">
+                <h4>Item 1.2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-2">
+                <h4>Item 2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-3">
+                <h4>Item 3</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-3-1">
+                <h4>Item 3.1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+              <div id="item-3-2">
+                <h4>Item 3.2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio blanditiis in ut laudantium et aliquam impedit sit error
+                  illo libero pariatur distinctio minus, adipisci veniam eaque
+                  atque nemo non delectus?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>

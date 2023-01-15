@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placeholders | Bootstrap</title>
+
+    <!-- Bootstrap Link CDN -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+    <script defer src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Popper Link CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-center">Placeholders</h1>
+    <hr />
+    <p>
+      Placeholders can be used to enhance the experience of your application.
+      They're built only with HTML and CSS, meaning you don't need any
+      JavaScript to create them.
+    </p>
+
+    <div class="container">
+      <h2>Example</h2>
+      <p>
+        we take a typical card component and recreate it with placeholders
+        applied to create a “loading card”. Size and proportions are the same
+        between the two.
+      </p>
+
+      <div class="row rounded border p-3 mb-4">
+        <!-- Card -->
+        <div class="col d-flex justify-content-end">
+          <div class="card" style="max-width: 20rem">
+            <img
+              src="/assets/honda-civic-2018.jpg"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur nihil eligendi neque, ex quidem saepe doloribus autem
+                asperiores veritatis aperiam ducimus dignissimos, ea nisi
+                exercitationem optio ullam ipsum necessitatibus? Iste.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Placeholder -->
+        <div class="col">
+          <div class="card" style="max-width: 20rem">
+            <!-- <img
+              src="/assets/honda-civic-2022.webp"
+              alt=""
+              class="card-img-top"
+            /> -->
+            <div class="bg-dark bg-opacity-50" style="aspect-ratio: 8/5"></div>
+            <div class="card-body">
+              <h5 class="placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-10"></span>
+                <span class="placeholder col-8"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-10"></span>
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-primary disabled placeholder col-6"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Colors</h2>
+      <div class="border rounded p-3 mb-4">
+        <span class="placeholder col-12 bg-primary"></span>
+        <span class="placeholder col-12 bg-secondary"></span>
+        <span class="placeholder col-12 bg-success"></span>
+        <span class="placeholder col-12 bg-danger"></span>
+        <span class="placeholder col-12 bg-warning"></span>
+        <span class="placeholder col-12 bg-info"></span>
+        <span class="placeholder col-12 bg-light"></span>
+        <span class="placeholder col-12 bg-dark"></span>
+      </div>
+
+      <h2>Sizing</h2>
+      <div class="border rounded p-3 mb-4">
+        <span class="placeholder col-12 placeholder-lg"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+      </div>
+
+      <h2>Animation</h2>
+      <div class="border rounded p-3 mb-4">
+        <p class="placeholder-glow">
+          <span class="placeholder col-12"></span>
+        </p>
+        <p class="placeholder-wave">
+          <span class="placeholder col-12"></span>
+        </p>
+      </div>
+    </div>
+    <div class="container mb-2 d-flex justify-content-end my-4">
+      <a href="/index.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>
